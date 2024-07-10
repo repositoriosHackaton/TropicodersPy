@@ -1,66 +1,70 @@
-# TropicodersPy
-En este espacio se sube el código creado para el grupo 
+# MoroPredict: Predicción de Morosidad en Carteras de Crédito
 
+![Descripción de la imagen](otra.jpeg)
 
-Se debe agregar toda la documentación que ustedes consideren pertinente para la compresión de los modelos usados, la ejecución del código y los resultados obtenidos. 
-Puden, si desean, agregar imágenes o resultados obtenidos. 
+## Breve descripción del proyecto:
 
-Recuerden que este readme es su puerta de entrada para su proyecto. 
+MoroPredict utiliza modelos de machine learning para analizar datos de la Superintendencia de Bancos de la República Dominicana y predecir la morosidad en carteras de crédito. Esto permite a las instituciones financieras identificar a tiempo a los prestatarios con mayor riesgo y tomar decisiones más informadas.
 
-Un ejemplo puede ser: 
-# Nombre del Proyecto
+## Arquitectura del proyecto:
+![Descripción de la imagen](URL_de_la_imagen)
 
-Breve descripción del proyecto.
+Carga y preprocesamiento de datos: Lee, limpia y transforma datos de diferentes fuentes.
+Modelos de Machine Learning: Entrenar y evaluar múltiples modelos (Red Neuronal, SVM, KNN, Random Forest).
+Selección del mejor modelo: Comparación y selección del modelo con mejor rendimiento.
+Interfaz de usuario (Flask): Visualización de resultados y gráficos interactivos.
+Proceso de desarrollo:
 
-## Tabla de contenidos
+Fuente del dataset: Superintendencia de Bancos de la República Dominicana.
+![Descripción de la imagen](simbad.jpeg)
 
-1. [Nombre](#Nombre)
-2. [Descripción](#descripción)
-3. [Arquitectura](#Arquitectura)
-4. [Proceso](#Proceso)
-5. [Funcionalidades](#Funcionalidades)
-6. [Estado del proyecto](#EstadoDelProyecto)
-7. [Agradecimientos](#Agradecimientos)
+Limpieza de datos:
 
+Eliminación de duplicados.
+Imputación de valores faltantes. ![Descripción de la imagen](smote.jpg)
+Manejo de excepciones/control de errores:
 
-* Nombre del proyecto
+Implementación de mecanismos para detectar y manejar datos inválidos o errores en el proceso.
+Registro de eventos y errores para facilitar la depuración.
+Modelo(s) de Machine Learning:
 
-* Breve descripción del proyecto -> Alguna imagen o gif que muestre el proyecto
+Red Neuronal (Perceptrón multicapa)
+Máquina de Soporte Vectorial (SVM)
+K-Vecinos más Cercanos (KNN)
+Bosque Aleatorio (Random Forest)
+Estadísticos (Valores, gráficos):
+![Descripción de la imagen](2.png)
+![Descripción de la imagen](4.png)
+![Descripción de la imagen](3.png)
 
-* Arquitectura del proyecto + imagen
+Métrica(s) de evaluación del modelo:
 
-* Proceso de desarrollo:
+Exactitud (Accuracy)
+Precisión (Precision)
+Sensibilidad (Recall)
+Puntuación F1 (F1-Score)
+Curva ROC
+Curva Precisión-Recall
 
--Fuente del dataset
--Limpieza de datos (img que lo valide)
--Manejo excepciones/control errores
--¿Qué modelo de Machine Learning están usando?
--Estadísticos (Valores, gráficos, …)
--Métrica(s) de evaluación del modelo
+## Integrantes del Equipo y Roles
+###  Milton García
+Papel: Cargar los datos en Pandas DataFrames. Asegurarse de que los datos estén correctamente importados y estructurados para su análisis posterior. Verificar la coherencia y calidad de los datos, especialmente en términos de captaciones y créditos por localidad y género.
+Explorar los datos para determinar el formato y los atributos necesarios. Evaluar el comportamiento de las captaciones y créditos en diferentes localidades y entre diferentes géneros a lo largo del tiempo, identificando patrones de crecimiento y decrecimiento.
 
-* Funcionalidades extra:
+### Erick Cuesto
+Papel: Crear visualizaciones efectivas para representar los datos de inclusión financiera. Graficar captaciones, créditos y operaciones de subagentes bancarios en diferentes localidades, utilizando subplots para comparar múltiples métricas en una sola figura.
 
-Ejem 1: Implementación de chatbot
-- Tecnología/Herramientas usadas (Librería, Framework, …)
-- Arquitectura (img)
-- Indicar fuente del dataset
-- Limpieza de datos (ejem: se usó PLN + img que lo validen)
-- Manejo excepciones/control errores
-- En caso de usar un modelo de ML indicar ¿Qué modelo de Machine Learning están usando?
-- Estadísticos (Valores, gráficos, …)
-- Métrica(s) de evaluación del modelo
+### Sebastián Espinal
+Papel: Realizar el preprocesado de datos. Identificar y corregir valores faltantes o nulos, asegurándose de que todos los datos estén en el formato correcto para el análisis. Normalizar y estandarizar los datos según sea necesario.
 
-Ejem 2: Integración del proyecto en una pág web
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
+### Madeline Pérez
+Papel: Analizar y evaluar las métricas clave de inclusión financiera. Determinar las localidades con mayor y menor acceso a servicios financieros, así como identificar diferencias significativas entre géneros. Evaluar y comparar las métricas de inclusión financiera para hacer recomendaciones específicas.
+### TODO EL EQUIPO - Modelado y Análisis Avanzado con IA
+Papel: Implementar técnicas de inteligencia artificial para realizar un análisis avanzado de los datos. Utilizar algoritmos de clustering para segmentar localidades según su nivel de inclusión financiera, y técnicas de regresión para identificar factores clave que afectan la inclusión financiera. Desarrollar modelos predictivos para proponer intervenciones específicas.
 
-Ejem 3: Integración del proyecto en un canal WhatsApp, Discord, Telegram, Correo, …
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
-
-Ejem 4: Desarrollo de interfaz gráfica de usuario
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
-
-Ejem …: …
-- Tecnología/Herramientas usadas …
+Tecnología y Herramientas Utilizadas
+Lenguaje de Programación: Python
+Bibliotecas: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+Frameworks: TensorFlow (para análisis avanzado de IA) y Flask
+Herramientas de Visualización: Matplotlib, Seaborn
+Plataforma de Desarrollo: Jupyter Notebook
