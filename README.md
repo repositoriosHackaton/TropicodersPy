@@ -1,6 +1,6 @@
 # MoroPredict: Predicción de Morosidad en Carteras de Crédito
 
-![Descripción de la imagen](otra.jpeg)
+![Descripción de la imagen](/IMAGENES/otra.jpeg)
 
 ## Breve descripción del proyecto:
 
