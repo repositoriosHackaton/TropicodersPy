@@ -16,12 +16,12 @@ Interfaz de usuario (Flask): Visualización de resultados y gráficos interactiv
 Proceso de desarrollo:
 
 Fuente del dataset: Superintendencia de Bancos de la República Dominicana.
-![Descripción de la imagen](simbad.jpeg)
+![Descripción de la imagen](/IMAGENES/simbad.jpeg)
 
 Limpieza de datos:
 
 Eliminación de duplicados.
-Imputación de valores faltantes. ![Descripción de la imagen](smote.jpg)
+Imputación de valores faltantes. ![Descripción de la imagen](/IMAGENES/smote.jpg)
 Manejo de excepciones/control de errores:
 
 Implementación de mecanismos para detectar y manejar datos inválidos o errores en el proceso.
@@ -33,9 +33,9 @@ Máquina de Soporte Vectorial (SVM)
 K-Vecinos más Cercanos (KNN)
 Bosque Aleatorio (Random Forest)
 Estadísticos (Valores, gráficos):
-![Descripción de la imagen](2.png)
-![Descripción de la imagen](4.png)
-![Descripción de la imagen](3.png)
+![Descripción de la imagen](/IMAGENES/2.png)
+![Descripción de la imagen](/IMAGENES/4.png)
+![Descripción de la imagen](/IMAGENES/3.png)
 
 Métrica(s) de evaluación del modelo:
 
